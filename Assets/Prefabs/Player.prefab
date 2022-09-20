@@ -1051,6 +1051,7 @@ MonoBehaviour:
   _spotLightShutDown: []
   GameOverSprite: {fileID: 0}
   TextEnumerationLoadSceneOne: {fileID: 0}
+  data: {fileID: 0}
 --- !u!1 &832972761624933433
 GameObject:
   m_ObjectHideFlags: 0
@@ -3102,6 +3103,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: edc290ed137e8f44dae880dab39e88fa, type: 2}
   controlNormal: {fileID: 4185792235751758042}
   controlInverse: {fileID: 683634678425503130}
+  data: {fileID: 0}
 --- !u!65 &6167270311277666491
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -4040,7 +4042,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4660072797775737125, guid: 23db808a565b4c34587d2eac2355a8f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.068
+      value: -0.615
       objectReference: {fileID: 0}
     - target: {fileID: 4660072797775737125, guid: 23db808a565b4c34587d2eac2355a8f3, type: 3}
       propertyPath: m_LocalPosition.y
@@ -4227,6 +4229,7 @@ MonoBehaviour:
   sphereViewfinder: {fileID: 422061364954221297, guid: 7332f2fb961b9d643a23be5abdcfbbc5, type: 3}
   CrosshairCollider: []
   SpriteCrosshair: {fileID: 3912526208014205762, guid: de22099260606f24ba6ab266eac06f8e, type: 3}
+  data: {fileID: 0}
   SpawnBullet: {fileID: 3861660464508606032}
   Bullet: {fileID: 4429424579181086018, guid: d411c3266dc196f4e911bb54c025c74b, type: 3}
 --- !u!114 &1695934840970428500
@@ -4245,5 +4248,6 @@ MonoBehaviour:
   sphereViewfinder: {fileID: 422061364954221297, guid: 7332f2fb961b9d643a23be5abdcfbbc5, type: 3}
   CrosshairCollider: []
   SpriteCrosshair: {fileID: 3912526208014205762, guid: de22099260606f24ba6ab266eac06f8e, type: 3}
+  data: {fileID: 0}
   SpawnBullet: {fileID: 3861660465048679417}
   Bullet: {fileID: 4429424579181086018, guid: d411c3266dc196f4e911bb54c025c74b, type: 3}

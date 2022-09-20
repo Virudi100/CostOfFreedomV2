@@ -44,9 +44,9 @@ public class BulletScript : MonoBehaviour
             {
                 other.gameObject.GetComponent<HPTurret>().Dead();
             }
-            else
+            /*else
                 Debug.Log("Turret HPLeft: " + other.gameObject.GetComponent<HPPlayer>().hpPlayer);
-
+            */
         }
 
 

@@ -1742,7 +1742,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   PlayerController: {fileID: -944628639613478452, guid: c348712bda248c246b8c49b3db54643f, type: 3}
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
 --- !u!1001 &406153276
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3563,7 +3563,7 @@ GameObject:
   - component: {fileID: 1080008298}
   - component: {fileID: 1080008297}
   - component: {fileID: 1080008301}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TriggerExitSpawn
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12030,7 +12030,7 @@ GameObject:
   - component: {fileID: 1593232800}
   - component: {fileID: 1593232799}
   - component: {fileID: 1593232798}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TriggerEndLevel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -12390,7 +12390,7 @@ GameObject:
   - component: {fileID: 1656111923}
   - component: {fileID: 1656111922}
   - component: {fileID: 1656111925}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: TriggerExitFirstZone
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13499,6 +13499,10 @@ PrefabInstance:
       propertyPath: SpriteCrosshair
       value: 
       objectReference: {fileID: 3912526208014205762, guid: de22099260606f24ba6ab266eac06f8e, type: 3}
+    - target: {fileID: 3728858995577801862, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
     - target: {fileID: 3858942787168920467, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_TagString
       value: Crosshair
@@ -13571,6 +13575,10 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: data
+      value: 
+      objectReference: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
     - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: GameOverSprite
       value: 

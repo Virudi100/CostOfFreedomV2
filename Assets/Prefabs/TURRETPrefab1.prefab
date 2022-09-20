@@ -53,6 +53,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 4429424579181086018, guid: 6cc560f539a5e104d9775c76b817ff2d, type: 3}
   bulletspeed: 800
   bulletSound: {fileID: 3758650020055820275}
+  data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
 --- !u!65 &5879080942059245759
 BoxCollider:
   m_ObjectHideFlags: 0
