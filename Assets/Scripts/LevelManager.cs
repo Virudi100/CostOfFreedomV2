@@ -128,14 +128,14 @@ public class LevelManager : MonoBehaviour
                     while (spawnIndex <= 9)             //Spawn les premiers Enemies de Gauche
                     {
                         Debug.Log("Spawn Left");
-                        enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneLeftFirst.position, Quaternion.identity));
+                        enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneLeftFirst2.position, Quaternion.identity));
                         spawnIndex++;
                     }
 
                     while (spawnIndex <= 11)             //Spawn les premiers Enemies de Droite
                     {
                         Debug.Log("Spawn Right");
-                        enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneRightFirst.position, Quaternion.identity));
+                        enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneRightFirst2.position, Quaternion.identity));
                         spawnIndex++;
                     }
 
@@ -147,13 +147,13 @@ public class LevelManager : MonoBehaviour
 
                 while (spawnIndex <= 13)             //Spawn les seconds Enemies de Gauche
                 {
-                    enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneLeftSecond.position, Quaternion.identity));
+                    enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneLeftSecond2.position, Quaternion.identity));
                     spawnIndex++;
                 }
 
                 while (spawnIndex <= 15)              //Spawn les seconds Enemies de Droite
                 {
-                    enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneRightSecond.position, Quaternion.identity));
+                    enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneRightSecond2.position, Quaternion.identity));
                     spawnIndex++;
                 }
             }
