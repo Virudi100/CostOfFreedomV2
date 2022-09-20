@@ -1,0 +1,8 @@
+-Faire assoir avant de commencer (calculer la hauteur du casque)
+-faire apparaitre le cockpit en blanc et que on peut rapprocher de soi pour ce mettre a l'aise puis valider
+-faire apparaitre le robot avec un effet "Vex" de destiny 2
+-Faire dans un premier temps les controles du robot dans une zone vide style animus
+-Pour les droitier, joystick a droite pour la vision et une manette a pousser a gauche pour avancer / reculer style elite dangerous (a inverser pour les gaucher)
+-La gachette du stick permet de frapper (anime du poing du robot) ou tiré, pour visé le robot tire où on regarde (avec un raycast partant du casque)
+
+

@@ -1,0 +1,15 @@
+fileFormatVersion: 2
+guid: 89f085428f3dde346a936ff5232a9bd3
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - headPosition: {instanceID: 0}
+  - sphereViewfinder: {instanceID: 0}
+  - SpriteCrosshair: {instanceID: 0}
+  - data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

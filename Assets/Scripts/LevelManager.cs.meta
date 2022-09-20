@@ -1,0 +1,34 @@
+fileFormatVersion: 2
+guid: 972d1ce5c2a98bd4a8e554914cefb4ca
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - dronePrefab: {instanceID: 0}
+  - data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
+  - triggerExitSpawn: {instanceID: 0}
+  - spawnDroneLeftFirst: {instanceID: 0}
+  - spawnDroneRightFirst: {instanceID: 0}
+  - spawnDroneLeftSecond: {instanceID: 0}
+  - spawnDroneRightSecond: {instanceID: 0}
+  - ffGenerateurL: {instanceID: 0}
+  - ffGenerateurR: {instanceID: 0}
+  - generateurL: {instanceID: 0}
+  - generateurR: {instanceID: 0}
+  - ffDoor: {instanceID: 0}
+  - triggerExitFirstZone: {instanceID: 0}
+  - spawnDroneLeftFirst2: {instanceID: 0}
+  - spawnDroneRightFirst2: {instanceID: 0}
+  - spawnDroneLeftSecond2: {instanceID: 0}
+  - spawnDroneRightSecond2: {instanceID: 0}
+  - ffGenerateurL2: {instanceID: 0}
+  - ffGenerateurR2: {instanceID: 0}
+  - generateurL2: {instanceID: 0}
+  - generateurR2: {instanceID: 0}
+  - ffDoor2: {instanceID: 0}
+  - triggerEndLevel: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
