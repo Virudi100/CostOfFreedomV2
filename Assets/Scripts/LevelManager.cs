@@ -57,6 +57,7 @@ public class LevelManager : MonoBehaviour
     private void Start()
     {
         data.droneDeadIndex = 0;
+        data.isplaying = true;
         inFirstZone = true;
     }
 

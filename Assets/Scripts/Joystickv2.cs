@@ -107,6 +107,6 @@ public class Joystickv2 : MonoBehaviour
             cockpit.transform.Rotate(new Vector3(0, speedRotateLR, 0) * Time.deltaTime, Space.World);
         }
 
-        cockpit.transform.eulerAngles = new Vector3(cockpit.transform.eulerAngles.x, cockpit.transform.eulerAngles.y, 0);
+        cockpit.transform.eulerAngles = new Vector3(Mathf.Clamp(((cockpit.transform.eulerAngles.x + 540)%360)-180,-15f,15f), cockpit.transform.eulerAngles.y, 0);
     }
 }
