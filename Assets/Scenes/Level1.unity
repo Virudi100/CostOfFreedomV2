@@ -568,7 +568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 683634679699720834, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 32.16
+      value: 24.14
       objectReference: {fileID: 0}
     - target: {fileID: 683634679699720834, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_LocalRotation.w
@@ -12179,6 +12179,11 @@ Transform:
   m_Father: {fileID: 52270562}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: -23.654, y: 98.874, z: -373.379}
+--- !u!1 &1446594145 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2016868377281525258, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+  m_PrefabInstance: {fileID: 683634679453863065}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1450671533
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -14779,8 +14784,56 @@ PrefabInstance:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 683634678295875010, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 683634678425503130, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678809742858, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101888, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: joystickGo
+      value: 
+      objectReference: {fileID: 1446594145}
+    - target: {fileID: 683634678862101900, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.553
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101900, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Size.x
+      value: 0.083827995
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Size.y
+      value: 0.16248877
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Size.z
+      value: 0.27585435
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0023154623
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Center.y
+      value: 0.1203052
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Center.z
+      value: -0.12377568
+      objectReference: {fileID: 0}
+    - target: {fileID: 683634678862101903, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_IsTrigger
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 683634679699720833, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
@@ -14894,6 +14947,14 @@ PrefabInstance:
     - target: {fileID: 5320762832228023253, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_RootOrder
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465409210015941347, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5465409210015941347, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5480478283391571798, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_SizeDelta.x

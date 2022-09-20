@@ -6,7 +6,7 @@ using UnityEngine.XR.Interaction.Toolkit;
 public class Manivelle : MonoBehaviour
 {
     [SerializeField] private GameObject cockpit;
-    private float speed = 2f;
+    private float speed = 3f;
     [SerializeField] private XRSimpleInteractable simple;
     private bool isUsing = false;
     private GameObject interactorGO;
@@ -46,15 +46,10 @@ public class Manivelle : MonoBehaviour
     {
         if(isUsing == true)
         {
-            float offset = -0.5f;
-            Vector3 trackingLocal = transform.InverseTransformPoint(interactorGO.transform.position);
-            gameObject.transform.localPosition = new Vector3(trackingLocal.x + offset, transform.localPosition.y, transform.localPosition.z);
-            print(trackingLocal);
-
-            //gameObject.transform.position = new Vector3(trackingLocal.x, transform.position.y, trackingLocal.z );
-            //print("X: "+ gameObject.transform.position.x);
-            //print("Y: " + gameObject.transform.position.y);
-            //print("Z: " + gameObject.transform.position.z);
+            float offset = 0f;
+            Vector3 tracking = interactorGO.transform.position;
+            transform.position = new Vector3(transform.position.x, transform.position.y,tracking.z + offset);
+            //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp((tracking.z + offset),8.1f,8.6f));         // -0.8         -0.2
         }
     }
 
@@ -64,13 +59,13 @@ public class Manivelle : MonoBehaviour
         if(other.gameObject.CompareTag("ZDFront"))
         {
             cockpit.transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            print("move forward");
+            //print("move forward");
         }
 
         if(other.gameObject.CompareTag("ZDBack"))
         {
             cockpit.transform.Translate(Vector3.back * speed * Time.deltaTime);
-            print("move backward");
+            //print("move backward");
         }
     }
 }
