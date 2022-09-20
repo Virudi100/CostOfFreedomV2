@@ -97,7 +97,7 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 112000000, guid: 33ca732bb93885d40b4ae0f0813395e5, type: 2}
+  m_LightingDataAsset: {fileID: 112000000, guid: c4ea582d2e781a843a811ddc83e6fd32, type: 2}
   m_LightingSettings: {fileID: 4890085278179872738, guid: 1203c8d28ee058349b943f1a71fc59e3, type: 2}
 --- !u!196 &4
 NavMeshSettings:
