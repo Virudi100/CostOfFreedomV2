@@ -80,6 +80,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   hpTurret: 2
+  _FxExplosion:
+  - {fileID: 6101459699644449809, guid: ea2099acb04673046ba9d8724da00b03, type: 3}
+  - {fileID: 264609961751195028, guid: 5b132afe23dbe7a469607626030fe099, type: 3}
 --- !u!1 &110325283375354434
 GameObject:
   m_ObjectHideFlags: 0
