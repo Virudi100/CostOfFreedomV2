@@ -12,7 +12,7 @@ public class GenerateurHP : MonoBehaviour
         destroyed.SetActive(false);
     }
 
-    private void Dead()
+    public void Dead()
     {
         destroyed.SetActive(true);
         Destroy(gameObject);

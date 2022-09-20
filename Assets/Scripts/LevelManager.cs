@@ -105,8 +105,8 @@ public class LevelManager : MonoBehaviour
             }
             else if (data.droneDeadIndex >= 8)
             {
-                Destroy(ffGenerateurL2);
-                Destroy(ffGenerateurR2);
+                Destroy(ffGenerateurL);
+                Destroy(ffGenerateurR);
             }
             if (generateurL == null && generateurR == null)
             {

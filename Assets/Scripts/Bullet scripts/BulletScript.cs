@@ -57,6 +57,11 @@ public class BulletScript : MonoBehaviour
             Debug.Log("je touche un generateur");
 
             other.gameObject.GetComponent<GenerateurHP>().hpGenerateur--;
+
+            if(other.gameObject.GetComponent<GenerateurHP>().hpGenerateur <= 0)
+            {
+                other.gameObject.GetComponent<GenerateurHP>().Dead();
+            }
         }
 
         //Detruit la balle
