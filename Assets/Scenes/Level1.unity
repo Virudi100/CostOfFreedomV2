@@ -13860,22 +13860,6 @@ Transform:
   m_Father: {fileID: 303336330}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1735394562 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 2623809194226049523, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-  m_PrefabInstance: {fileID: 683634679453863065}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f7201a12d95ffc409449d95f23cf332, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &1754122936 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3305275009962551218, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-  m_PrefabInstance: {fileID: 683634679453863065}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1759709871
 GameObject:
   m_ObjectHideFlags: 0
@@ -14059,11 +14043,6 @@ Transform:
   m_Father: {fileID: 208824751}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1823181666 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6655912254762080011, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-  m_PrefabInstance: {fileID: 683634679453863065}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1842053012
 GameObject:
   m_ObjectHideFlags: 0
@@ -14159,11 +14138,6 @@ Transform:
   m_Father: {fileID: 1319930525}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1907554879 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 3547358353414358782, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-  m_PrefabInstance: {fileID: 683634679453863065}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1909556067
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -15040,30 +15014,6 @@ PrefabInstance:
       propertyPath: m_ConnectedAnchor.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
-    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: GameOverSprite
-      value: 
-      objectReference: {fileID: 1823181666}
-    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: TextEnumerationLoadSceneOne
-      value: 
-      objectReference: {fileID: 1735394562}
-    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: _spotLightShutDown.Array.size
-      value: 2
-      objectReference: {fileID: 0}
-    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: _spotLightShutDown.Array.data[0]
-      value: 
-      objectReference: {fileID: 1907554879}
-    - target: {fileID: 6102476305995732612, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: _spotLightShutDown.Array.data[1]
-      value: 
-      objectReference: {fileID: 1754122936}
     - target: {fileID: 6158017083050137755, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_Name
       value: pare_brise_groupe
