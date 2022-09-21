@@ -12,6 +12,7 @@ public class HPDrone : MonoBehaviour
     {
         for (int i = 0; i < _FxExplosion.Length; i++)
         {
+            
             GameObject _FX = new GameObject();
             _FX = Instantiate(_FxExplosion[i],transform.position,transform.rotation);
             _FX.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
