@@ -46,9 +46,15 @@ public class Manivelle : MonoBehaviour
     {
         if(isUsing == true)
         {
-            float offset = 0f;
+            float offset = -0.5f;
+            Vector3 trackingLocal = transform.InverseTransformPoint(interactorGO.transform.position);
+            gameObject.transform.localPosition = new Vector3(trackingLocal.x + offset, transform.localPosition.y, transform.localPosition.z);
+            print(trackingLocal);
+
+
+            /*float offset = 0f;
             Vector3 tracking = interactorGO.transform.position;
-            transform.position = new Vector3(transform.position.x, transform.position.y,tracking.z + offset);
+            transform.position = new Vector3(transform.position.x, transform.position.y,tracking.z + offset);*/
             //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp((tracking.z + offset),8.1f,8.6f));         // -0.8         -0.2
         }
     }
