@@ -884,8 +884,7 @@ MonoBehaviour:
   hpDrone: 2
   droneEntier: {fileID: 8667027758258893272}
   _FxExplosion:
-  - {fileID: 6101459699644449809, guid: ea2099acb04673046ba9d8724da00b03, type: 3}
-  - {fileID: 264609961751195028, guid: 5b132afe23dbe7a469607626030fe099, type: 3}
+  - {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
 --- !u!1 &8324112275580340966
 GameObject:
   m_ObjectHideFlags: 0

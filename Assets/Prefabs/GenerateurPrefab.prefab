@@ -729,8 +729,8 @@ MonoBehaviour:
   hpGenerateur: 2
   destroyed: {fileID: 0}
   _FxExplosion:
-  - {fileID: 6101459699644449809, guid: ea2099acb04673046ba9d8724da00b03, type: 3}
-  - {fileID: 264609961751195028, guid: 5b132afe23dbe7a469607626030fe099, type: 3}
+  - {fileID: 1000011128802252, guid: 96730f8640590934eacb6f860058e7f9, type: 3}
+  - {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
 --- !u!1 &2407925913684830238
 GameObject:
   m_ObjectHideFlags: 0
