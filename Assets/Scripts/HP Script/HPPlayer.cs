@@ -17,6 +17,11 @@ public class HPPlayer : MonoBehaviour
     float _pauseGame = 0f;
     int _time = 5;
      private bool _nexTime;
+
+    [Header("Ejection")]
+    public Text TextEnumerationLoadSceneOneEjection;
+    public GameObject GameOverSpriteEjection;
+
     [SerializeField] private Data data;
 
     private void FixedUpdate()
@@ -71,6 +76,35 @@ public class HPPlayer : MonoBehaviour
             }
 
             TextEnumerationLoadSceneOne.text = ("You dead, return in load scene in : " + _time);
+        }
+
+        if (_time <= 0)
+        {
+            SceneManager.LoadScene(0);
+        }
+    }
+
+    public void DeadEjection()
+    {
+        data.isplaying = false;
+
+
+        GameOverSpriteEjection.SetActive(true);
+        _boolDead = true;
+        for (int i = 0; i < _spotLightShutDown.Length; i++)
+        {
+            _spotLightShutDown[i].SetActive(false);
+        }
+
+
+        if (_boolDead == true)
+        {
+            if (_nexTime == false)
+            {
+                StartCoroutine(CoroutineForLoadSceneOne());
+            }
+
+            TextEnumerationLoadSceneOneEjection.text = ("You dead, return in load scene in : " + _time);
         }
 
         if (_time <= 0)
