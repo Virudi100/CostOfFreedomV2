@@ -12,11 +12,11 @@ public class Manivelle : MonoBehaviour
     private GameObject interactorGO;
     private Vector3 standardpos;
 
-    private float prevInteractorPosZ = 0f;
+    private Vector3 prevInteractorPos;
 
     private void Awake()
     {
-        standardpos = transform.localPosition;
+        standardpos = simple.gameObject.transform.localPosition;
     }
 
     private void OnEnable()
@@ -36,32 +36,34 @@ public class Manivelle : MonoBehaviour
         isUsing = true;
         interactorGO = args.interactorObject.transform.gameObject;
 
-        if (prevInteractorPosZ == 0f)                    //si la position precedente = 0
-        {
-            prevInteractorPosZ = interactorGO.transform.localPosition.z;
-        }
-
-        
     }
 
     private void StopUsingManivelle(SelectExitEventArgs args)
     {
         isUsing = false;
-        prevInteractorPosZ = 0f;                   //si la position precedente = 0
+        prevInteractorPos = Vector3.zero;                   //si la position precedente = 0
         
         interactorGO = null;
-        transform.localPosition = standardpos;
+        simple.gameObject.transform.localPosition = standardpos;
     }
 
     private void Update()
     {
         if(isUsing == true)
         {
-            float delta = Mathf.Clamp(interactorGO.transform.localPosition.z - prevInteractorPosZ, -0.1f, 0.1f);
+            if (prevInteractorPos == Vector3.zero)                    //si la position precedente = 0
+            {
+                prevInteractorPos = interactorGO.transform.localPosition;
+            }
 
-            prevInteractorPosZ = interactorGO.transform.localPosition.z;
+            Vector3 delta = interactorGO.transform.localPosition - prevInteractorPos;
 
-            transform.localPosition = new Vector3(delta * transform.forward.x, delta * transform.forward.y, delta * transform.forward.z);
+            prevInteractorPos = interactorGO.transform.localPosition;
+
+            Vector3 deplacement = new Vector3(delta.x * simple.gameObject.transform.forward.x, delta.y * simple.gameObject.transform.forward.y, delta.z * simple.gameObject.transform.forward.z);
+            Vector3 clamp = new Vector3(deplacement.x, deplacement.y, Mathf.Clamp(deplacement.z, -0.28f,0.28f));
+
+            simple.gameObject.transform.localPosition += clamp;
 
 
             /*

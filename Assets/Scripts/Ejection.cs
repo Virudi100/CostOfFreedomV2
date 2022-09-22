@@ -15,7 +15,7 @@ public class Ejection : MonoBehaviour
 
     private void Start()
     {
-        rb = gameObject.GetComponent<Rigidbody>();    
+        rb = gameObject.GetComponent<Rigidbody>();
     }
 
     private void OnEnable()
@@ -33,6 +33,7 @@ public class Ejection : MonoBehaviour
         if(isEjected == false)
         {
             isEjected = true;
+            
             StartCoroutine(Eject());
         }
         
@@ -42,6 +43,7 @@ public class Ejection : MonoBehaviour
     {
         gameObject.GetComponent<BoxCollider>().enabled = false;
         gameObject.transform.parent = null;
+        rb.isKinematic = false;
         rb.useGravity = true;
         rb.AddForce(Vector3.up * 2000f);
         player.DeadEjection();

@@ -13,3 +13,4 @@ MonoBehaviour:
   m_Name: Data
   m_EditorClassIdentifier: 
   droneDeadIndex: 0
+  isplaying: 1
