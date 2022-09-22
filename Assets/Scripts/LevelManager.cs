@@ -11,11 +11,11 @@ public class LevelManager : MonoBehaviour
 
     [SerializeField] private int spawnIndex = 0;
 
-    [SerializeField] private List<GameObject> enemiesListOne;
-    [SerializeField] private List<GameObject> enemiesListTwo;
+    [SerializeField] public List<GameObject> enemiesListOne;
+    [SerializeField] public List<GameObject> enemiesListTwo;
 
-    [SerializeField] private List<GameObject> enemiesListOneSecond;
-    [SerializeField] private List<GameObject> enemiesListTwoSecond;
+    [SerializeField] public List<GameObject> enemiesListOneSecond;
+    [SerializeField] public List<GameObject> enemiesListTwoSecond;
 
     //First part
     [Header("First Zone")]
@@ -54,8 +54,10 @@ public class LevelManager : MonoBehaviour
     private bool inSecondZone = false;
     private bool inEndZone = false;
 
+    private ObjectifManager _objectifManager;
     private void Start()
     {
+        _objectifManager = FindObjectOfType<ObjectifManager>();
         data.droneDeadIndex = 0;
         data.isplaying = true;
         inFirstZone = true;
@@ -76,6 +78,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Left");
                         enemiesListOne.Add(Instantiate(dronePrefab, spawnDroneLeftFirst.position, Quaternion.identity));
+                        _objectifManager._numberDrone++;
                         spawnIndex++;
                     }
 
@@ -83,6 +86,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Right");
                         enemiesListOne.Add(Instantiate(dronePrefab, spawnDroneRightFirst.position, Quaternion.identity));
+                        _objectifManager._numberDrone++;
                         spawnIndex++;
                     }
 
@@ -95,12 +99,14 @@ public class LevelManager : MonoBehaviour
                 while (spawnIndex <= 5)             //Spawn les seconds Enemies de Gauche
                 {
                     enemiesListTwoSecond.Add(Instantiate(dronePrefab, spawnDroneLeftSecond.position, Quaternion.identity));
+                    _objectifManager._numberDrone++;
                     spawnIndex++;
                 }
 
                 while (spawnIndex <= 7)              //Spawn les seconds Enemies de Droite
                 {
                     enemiesListTwoSecond.Add(Instantiate(dronePrefab, spawnDroneRightSecond.position, Quaternion.identity));
+                    _objectifManager._numberDrone++;
                     spawnIndex++;
                 }
             }
@@ -130,6 +136,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Left");
                         enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneLeftFirst2.position, Quaternion.identity));
+                        _objectifManager._numberDrone++;
                         spawnIndex++;
                     }
 
@@ -137,6 +144,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Right");
                         enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneRightFirst2.position, Quaternion.identity));
+                        _objectifManager._numberDrone++;
                         spawnIndex++;
                     }
 
@@ -149,12 +157,14 @@ public class LevelManager : MonoBehaviour
                 while (spawnIndex <= 13)             //Spawn les seconds Enemies de Gauche
                 {
                     enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneLeftSecond2.position, Quaternion.identity));
+                    _objectifManager._numberDrone++;
                     spawnIndex++;
                 }
 
                 while (spawnIndex <= 15)              //Spawn les seconds Enemies de Droite
                 {
                     enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneRightSecond2.position, Quaternion.identity));
+                    _objectifManager._numberDrone++;
                     spawnIndex++;
                 }
             }
