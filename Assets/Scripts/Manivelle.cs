@@ -12,6 +12,8 @@ public class Manivelle : MonoBehaviour
     private GameObject interactorGO;
     private Vector3 standardpos;
 
+    private float prevInteractorPosZ = 0f;
+
     private void Awake()
     {
         standardpos = transform.localPosition;
@@ -33,11 +35,20 @@ public class Manivelle : MonoBehaviour
     {
         isUsing = true;
         interactorGO = args.interactorObject.transform.gameObject;
+
+        if (prevInteractorPosZ == 0f)                    //si la position precedente = 0
+        {
+            prevInteractorPosZ = interactorGO.transform.localPosition.z;
+        }
+
+        
     }
 
     private void StopUsingManivelle(SelectExitEventArgs args)
     {
         isUsing = false;
+        prevInteractorPosZ = 0f;                   //si la position precedente = 0
+        
         interactorGO = null;
         transform.localPosition = standardpos;
     }
@@ -46,16 +57,18 @@ public class Manivelle : MonoBehaviour
     {
         if(isUsing == true)
         {
+            float delta = Mathf.Clamp(interactorGO.transform.localPosition.z - prevInteractorPosZ, -0.1f, 0.1f);
+
+            prevInteractorPosZ = interactorGO.transform.localPosition.z;
+
+            transform.localPosition = new Vector3(delta * transform.forward.x, delta * transform.forward.y, delta * transform.forward.z);
+
+
+            /*
             float offset = -0.5f;
             Vector3 trackingLocal = transform.InverseTransformPoint(interactorGO.transform.position);
             gameObject.transform.localPosition = new Vector3(trackingLocal.x + offset, transform.localPosition.y, transform.localPosition.z);
-            print(trackingLocal);
-
-
-            /*float offset = 0f;
-            Vector3 tracking = interactorGO.transform.position;
-            transform.position = new Vector3(transform.position.x, transform.position.y,tracking.z + offset);*/
-            //transform.position = new Vector3(transform.position.x, transform.position.y, Mathf.Clamp((tracking.z + offset),8.1f,8.6f));         // -0.8         -0.2
+            print(trackingLocal);*/
         }
     }
 
