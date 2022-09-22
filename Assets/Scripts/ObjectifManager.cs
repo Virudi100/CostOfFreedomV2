@@ -7,28 +7,27 @@ using UnityEngine.UI;
 
 public class ObjectifManager : MonoBehaviour
 {
-    
-    public int _numberDrone;
-    public Text TextObjectif;
-    private string _droneString;
-    private string _TotalString;
-
-    
-    private void FixedUpdate()
+    private int _numberDrone=0;
+    public Text _ObjectifText;
+    private void OnEnable()
     {
-        
-        if (_numberDrone > 0)
-        {
-            _droneString = "@- Detruire : " + _numberDrone + " ennemies";
-        }
-        else
-        {
-            _droneString = "";
-        }
-        
-        _TotalString = "Objectif : " + _droneString;
-        _TotalString = _TotalString.Replace("@", Environment.NewLine);
-        TextObjectif.text = _TotalString;
+        LevelManager.spawnDrone += addDrone;
+        HPDrone.DeadDrone += RemoveDrone;
+    }
 
+    private void OnDisable()
+    {
+        LevelManager.spawnDrone -= addDrone;
+        HPDrone.DeadDrone -= RemoveDrone;
+    }
+
+    void addDrone()
+    {
+        _numberDrone++;
+    }
+
+    void RemoveDrone()
+    {
+        _numberDrone--;
     }
 }

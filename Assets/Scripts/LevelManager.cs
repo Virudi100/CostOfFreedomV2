@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
@@ -54,10 +55,10 @@ public class LevelManager : MonoBehaviour
     private bool inSecondZone = false;
     private bool inEndZone = false;
 
-    private ObjectifManager _objectifManager;
+    public static event Action spawnDrone;
+
     private void Start()
     {
-        _objectifManager = FindObjectOfType<ObjectifManager>();
         data.droneDeadIndex = 0;
         data.isplaying = true;
         inFirstZone = true;
@@ -78,7 +79,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Left");
                         enemiesListOne.Add(Instantiate(dronePrefab, spawnDroneLeftFirst.position, Quaternion.identity));
-                        _objectifManager._numberDrone++;
+                        SignalSpawnDroneForObjectifManager();
                         spawnIndex++;
                     }
 
@@ -86,7 +87,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Right");
                         enemiesListOne.Add(Instantiate(dronePrefab, spawnDroneRightFirst.position, Quaternion.identity));
-                        _objectifManager._numberDrone++;
+                        SignalSpawnDroneForObjectifManager();
                         spawnIndex++;
                     }
 
@@ -99,14 +100,14 @@ public class LevelManager : MonoBehaviour
                 while (spawnIndex <= 5)             //Spawn les seconds Enemies de Gauche
                 {
                     enemiesListTwoSecond.Add(Instantiate(dronePrefab, spawnDroneLeftSecond.position, Quaternion.identity));
-                    _objectifManager._numberDrone++;
+                    SignalSpawnDroneForObjectifManager();
                     spawnIndex++;
                 }
 
                 while (spawnIndex <= 7)              //Spawn les seconds Enemies de Droite
                 {
                     enemiesListTwoSecond.Add(Instantiate(dronePrefab, spawnDroneRightSecond.position, Quaternion.identity));
-                    _objectifManager._numberDrone++;
+                    SignalSpawnDroneForObjectifManager();
                     spawnIndex++;
                 }
             }
@@ -136,7 +137,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Left");
                         enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneLeftFirst2.position, Quaternion.identity));
-                        _objectifManager._numberDrone++;
+                        SignalSpawnDroneForObjectifManager();
                         spawnIndex++;
                     }
 
@@ -144,7 +145,7 @@ public class LevelManager : MonoBehaviour
                     {
                         Debug.Log("Spawn Right");
                         enemiesListOneSecond.Add(Instantiate(dronePrefab, spawnDroneRightFirst2.position, Quaternion.identity));
-                        _objectifManager._numberDrone++;
+                        SignalSpawnDroneForObjectifManager();
                         spawnIndex++;
                     }
 
@@ -157,14 +158,14 @@ public class LevelManager : MonoBehaviour
                 while (spawnIndex <= 13)             //Spawn les seconds Enemies de Gauche
                 {
                     enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneLeftSecond2.position, Quaternion.identity));
-                    _objectifManager._numberDrone++;
+                    SignalSpawnDroneForObjectifManager();
                     spawnIndex++;
                 }
 
                 while (spawnIndex <= 15)              //Spawn les seconds Enemies de Droite
                 {
                     enemiesListTwo.Add(Instantiate(dronePrefab, spawnDroneRightSecond2.position, Quaternion.identity));
-                    _objectifManager._numberDrone++;
+                    SignalSpawnDroneForObjectifManager();
                     spawnIndex++;
                 }
             }
@@ -192,6 +193,11 @@ public class LevelManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    public void SignalSpawnDroneForObjectifManager()
+    {
+        spawnDrone?.Invoke();
     }
 }
 

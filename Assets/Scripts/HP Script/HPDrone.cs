@@ -8,13 +8,8 @@ public class HPDrone : MonoBehaviour
     [HideInInspector] public int hpDrone = 2;
     [SerializeField] private GameObject droneEntier;
     [SerializeField]private GameObject[] _FxExplosion;
-    private ObjectifManager _objectifManager;
-
-    private void Start()
-    {
-        _objectifManager = GetComponent<ObjectifManager>();
-    }
-
+    public static Action DeadDrone;
+    
     public void Dead()
     {
         for (int i = 0; i < _FxExplosion.Length; i++)
@@ -25,8 +20,12 @@ public class HPDrone : MonoBehaviour
             _FX.GetComponent<ParticleSystem>().Play();
         }
 
-        _objectifManager._numberDrone--;
+        SignalLaunchRemoveObjectifManager();
         Destroy(droneEntier);
+    }
 
+    public void SignalLaunchRemoveObjectifManager()
+    {
+        DeadDrone?.Invoke();
     }
 }
