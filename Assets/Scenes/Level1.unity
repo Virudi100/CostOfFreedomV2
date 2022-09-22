@@ -14536,6 +14536,10 @@ PrefabInstance:
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 2eddada0293451549862cccfa37e915a, type: 2}
+    - target: {fileID: 3542792963009780526, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3545843285089422753, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: SpriteCrosshair
       value: 
@@ -14547,6 +14551,10 @@ PrefabInstance:
     - target: {fileID: 3858942787168920467, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_TagString
       value: Crosshair
+      objectReference: {fileID: 0}
+    - target: {fileID: 4109704212255118493, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Text
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 4221005654535549341, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_Name
@@ -14655,6 +14663,14 @@ PrefabInstance:
     - target: {fileID: 6655912254762080011, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807628576330312432, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6807628576330312432, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7381845767982984143, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_RootOrder
