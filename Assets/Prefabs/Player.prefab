@@ -3336,7 +3336,7 @@ MonoBehaviour:
   - {fileID: 2100000, guid: edc290ed137e8f44dae880dab39e88fa, type: 2}
   controlNormal: {fileID: 4185792235751758042}
   controlInverse: {fileID: 683634678425503130}
-  data: {fileID: 0}
+  data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
 --- !u!65 &6167270311277666491
 BoxCollider:
   m_ObjectHideFlags: 0

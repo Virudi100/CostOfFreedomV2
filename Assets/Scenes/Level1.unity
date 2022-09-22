@@ -14532,10 +14532,6 @@ PrefabInstance:
       propertyPath: SpriteCrosshair
       value: 
       objectReference: {fileID: 3912526208014205762, guid: de22099260606f24ba6ab266eac06f8e, type: 3}
-    - target: {fileID: 3728858995577801862, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
-      propertyPath: data
-      value: 
-      objectReference: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
     - target: {fileID: 3858942787168920467, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_TagString
       value: Crosshair
