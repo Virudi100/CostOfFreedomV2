@@ -24,10 +24,25 @@ public class ObjectifManager : MonoBehaviour
     void addDrone()
     {
         _numberDrone++;
+        UpdatText();
     }
 
     void RemoveDrone()
     {
         _numberDrone--;
+        UpdatText();
+    }
+
+    void UpdatText()
+    {
+        if (_numberDrone > 0)
+        {
+            _ObjectifText.text =
+                "-Detruire : " + _numberDrone + " drone ennemies";
+        }
+        else
+        {
+            _ObjectifText.text = "";
+        }
     }
 }
