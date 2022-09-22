@@ -9,6 +9,7 @@ public class PhysicsButton : MonoBehaviour
 {
     [SerializeField] private float threshold = 0.1f;
     [SerializeField] private float deadZone = 0.025f;
+    [SerializeField] private int indexScene;
 
     private bool isPressed;
     private Vector3 starPos;
@@ -60,6 +61,6 @@ public class PhysicsButton : MonoBehaviour
         isPressed = false;
         onReleased.Invoke();
         Debug.Log("Released");
-        SceneManager.LoadScene(1);
+        SceneManager.LoadScene(indexScene);
     }
 }
