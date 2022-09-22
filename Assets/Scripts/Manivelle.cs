@@ -61,9 +61,12 @@ public class Manivelle : MonoBehaviour
             prevInteractorPos = interactorGO.transform.localPosition;
 
             Vector3 deplacement = new Vector3(delta.x * simple.gameObject.transform.forward.x, delta.y * simple.gameObject.transform.forward.y, delta.z * simple.gameObject.transform.forward.z);
-            Vector3 clamp = new Vector3(deplacement.x, deplacement.y, Mathf.Clamp(deplacement.z, -0.28f,0.28f));
 
-            simple.gameObject.transform.localPosition += clamp;
+            simple.gameObject.transform.localPosition += deplacement;
+
+            Vector3 clamped = new Vector3(simple.gameObject.transform.localPosition.x, simple.gameObject.transform.localPosition.y,Mathf.Clamp(simple.gameObject.transform.localPosition.z, -0.28f, 0.28f));
+
+            simple.gameObject.transform.localPosition = clamped;
 
 
             /*
