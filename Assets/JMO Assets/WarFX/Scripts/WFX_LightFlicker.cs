@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Runtime.InteropServices.WindowsRuntime;
 
 /**
  *	Rapidly sets a light on/off.
@@ -10,13 +11,9 @@ using System.Collections;
 [RequireComponent(typeof(Light))]
 public class WFX_LightFlicker : MonoBehaviour
 {
-	public float time = 0.05f;
-	
-	private float timer;
-	
+
 	void Start ()
 	{
-		timer = time;
 		StartCoroutine("Flicker");
 	}
 	
@@ -24,15 +21,12 @@ public class WFX_LightFlicker : MonoBehaviour
 	{
 		while(true)
 		{
-			GetComponent<Light>().enabled = !GetComponent<Light>().enabled;
+			GetComponent<Light>().enabled = true;
+			yield return new WaitForSeconds(0.0175f);
+			GetComponent<Light>().enabled = false;
+			yield return new WaitForSeconds(1f);
+		
 			
-			do
-			{
-				timer -= Time.deltaTime;
-				yield return null;
-			}
-			while(timer > 0);
-			timer = time;
 		}
 	}
 }
