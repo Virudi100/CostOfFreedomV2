@@ -3,13 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="7f09db73-7c30-4503-a825-41b4b5bf152e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/BigExplosionEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/BigExplosionEffect.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/PlasmaExplosionEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/PlasmaExplosionEffect.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmallExplosionEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/EffectExamples/FireExplosionEffects/Prefabs/SmallExplosionEffect.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/GenerateurPrefab.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/GenerateurPrefab.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/TURRETPrefab1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/TURRETPrefab1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/drone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPTurret.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ObjectifManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ObjectifManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -67,6 +61,7 @@
       <updated>1663675422016</updated>
       <workItem from="1663675431631" duration="680000" />
       <workItem from="1663746529664" duration="1204000" />
+      <workItem from="1663831416975" duration="403000" />
     </task>
     <servers />
   </component>
@@ -86,6 +81,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
