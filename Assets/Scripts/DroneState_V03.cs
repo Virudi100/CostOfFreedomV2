@@ -17,7 +17,9 @@ public class DroneState_V03 : MonoBehaviour
     private bool _canShoot = true;
     [SerializeField] private Data data;
     public AudioSource drone_shot_sound;
-
+    public GameObject FXFire;
+    
+    
 
     private void Start()
     {
@@ -49,6 +51,7 @@ public class DroneState_V03 : MonoBehaviour
             NewBullet.GetComponent<Rigidbody>().AddForce(bulletSpawnPoint.forward * bulletspeed);
             yield return new WaitForSeconds(1f);
             drone_shot_sound.Play();
+            FXFire.GetComponent<ParticleSystem>().Play();
             _canShoot = true;
         }
     }

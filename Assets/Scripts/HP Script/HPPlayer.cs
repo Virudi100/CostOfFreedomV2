@@ -46,8 +46,6 @@ public class HPPlayer : MonoBehaviour
                     data.isplaying = false;
                     break;
             }
-
-            Debug.Log(_time);
         }
         else
         {
