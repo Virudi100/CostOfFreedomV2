@@ -214,10 +214,14 @@ MonoBehaviour:
   anchor: {fileID: 3515237396400715063}
   fixation: {fileID: 3515237397050311583}
   player: {fileID: 0}
+  state: 0
+  nextState: 0
   bulletSpawnPoint: {fileID: 3515237397528399752}
   bulletPrefab: {fileID: 1000012600307132, guid: 20c0f7e297297fc468f9740f6bb08cb1, type: 3}
   bulletspeed: 800
   bulletSound: {fileID: 3515237397528399753}
+  canonTurret: {fileID: 3515237397528399752}
+  detectionIndex: 60
   data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
   destroyedGo: {fileID: 1954117298545159900}
 --- !u!65 &3515237396400715061
