@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8588112292098157310}
   - component: {fileID: 2595587554076737857}
+  - component: {fileID: 5276019826127186011}
   m_Layer: 0
   m_Name: rempartPrefab
   m_TagString: Untagged
@@ -47,8 +48,21 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 202.34624, y: 39.966763, z: 28.90345}
-  m_Center: {x: -17.393562, y: 19.48338, z: 0.89689595}
+  m_Size: {x: 201.7663, y: 39.966763, z: 28.90345}
+  m_Center: {x: -17.683556, y: 19.48338, z: 0.89689595}
+--- !u!65 &5276019826127186011
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8588112292098157311}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 41.297268, y: 59.318108, z: 39.2061}
+  m_Center: {x: 105.49913, y: 29.15906, z: 6.04821}
 --- !u!1001 &1317341090837972928
 PrefabInstance:
   m_ObjectHideFlags: 0
