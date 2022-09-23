@@ -90,7 +90,7 @@ public class TurretState : MonoBehaviour
         return false;
     }
 
-    // on applique les actions associées au transitions
+    // on applique les actions associÃ©es au transitions
     private void TransitionOrChangeState()
     {
         switch (nextState)
@@ -108,7 +108,7 @@ public class TurretState : MonoBehaviour
         state = nextState;
     }
 
-    // on applique le comportement des états
+    // on applique le comportement des Ã©tats
     private void StateBehavior()
     {
         switch (state)

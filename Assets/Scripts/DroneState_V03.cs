@@ -23,7 +23,6 @@ public class DroneState_V03 : MonoBehaviour
 
     private void Start()
     {
-
         _navMesh = gameObject.GetComponent<NavMeshAgent>();
         _rb = gameObject.GetComponent<Rigidbody>();
         player = GameObject.FindGameObjectWithTag("Player").transform;
@@ -47,11 +46,13 @@ public class DroneState_V03 : MonoBehaviour
         if (_canShoot == true)
         {
             _canShoot = false;
-            GameObject NewBullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
-            NewBullet.GetComponent<Rigidbody>().AddForce(bulletSpawnPoint.forward * bulletspeed);
-            yield return new WaitForSeconds(1f);
             drone_shot_sound.Play();
             FXFire.GetComponent<ParticleSystem>().Play();
+            bulletPrefab.GetComponent<ParticleSystem>().Play();
+            //GameObject NewBullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
+            //NewBullet.GetComponent<Rigidbody>().AddForce(bulletSpawnPoint.forward * bulletspeed);
+            yield return new WaitForSeconds(1f);
+            
             _canShoot = true;
         }
     }
