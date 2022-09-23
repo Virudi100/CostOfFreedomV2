@@ -9,6 +9,7 @@ public class HPDrone : MonoBehaviour
     [SerializeField] private GameObject droneEntier;
     [SerializeField]private GameObject[] _FxExplosion;
     public static Action DeadDrone;
+    [SerializeField] private AudioSource soundDeadDrone;
 
     public delegate void droneKilled();
     public static  event droneKilled OndroneDestroyed;
@@ -25,6 +26,7 @@ public class HPDrone : MonoBehaviour
         }
         OndroneDestroyed?.Invoke();
         SignalLaunchRemoveObjectifManager();
+        soundDeadDrone.Play();
         Destroy(droneEntier);
     }
 

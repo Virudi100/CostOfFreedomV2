@@ -5,8 +5,6 @@ using UnityEngine.XR.Interaction.Toolkit;
 
 public class Manivelle : MonoBehaviour
 {
-    [SerializeField] private GameObject cockpit;
-    private float speed = 3f;
     [SerializeField] private XRSimpleInteractable simple;
     private bool isUsing = false;
     private GameObject interactorGO;
@@ -60,7 +58,7 @@ public class Manivelle : MonoBehaviour
 
             prevInteractorPos = interactorGO.transform.localPosition;
 
-            Vector3 deplacement = new Vector3(delta.x * simple.gameObject.transform.forward.x, delta.y * simple.gameObject.transform.forward.y, delta.z * simple.gameObject.transform.forward.z);
+            Vector3 deplacement = new Vector3(delta.x * simple.gameObject.transform.InverseTransformDirection(simple.gameObject.transform.forward).x, delta.y * simple.gameObject.transform.InverseTransformDirection(simple.gameObject.transform.forward).y, delta.z * simple.gameObject.transform.InverseTransformDirection(simple.gameObject.transform.forward).z);
 
             simple.gameObject.transform.localPosition += deplacement;
 
@@ -78,18 +76,5 @@ public class Manivelle : MonoBehaviour
     }
 
 
-    private void OnTriggerStay(Collider other)
-    {
-        if(other.gameObject.CompareTag("ZDFront"))
-        {
-            cockpit.transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            //print("move forward");
-        }
-
-        if(other.gameObject.CompareTag("ZDBack"))
-        {
-            cockpit.transform.Translate(Vector3.back * speed * Time.deltaTime);
-            //print("move backward");
-        }
-    }
+    
 }
