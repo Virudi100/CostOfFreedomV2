@@ -42,6 +42,7 @@ public class BulletScript : MonoBehaviour
 
             if(other.gameObject.GetComponent<HPTurret>().hpTurret <= 0)
             {
+                other.gameObject.GetComponent<TurretState>().destroyedGo.SetActive(true);
                 other.gameObject.GetComponent<HPTurret>().Dead();
             }
             /*else
