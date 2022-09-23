@@ -4,13 +4,12 @@ using UnityEngine;
 
 public class BulletEnemiScript : MonoBehaviour
 {
-    Rigidbody _rb;
     public float damageBulletPlayer = 20f;
+    [SerializeField] private GameObject rocket;
 
     private void Start()
     {
         StartCoroutine(StartDecay());
-        _rb = GetComponent<Rigidbody>();
     }
 
     private void OnTriggerEnter(Collider other)
@@ -19,7 +18,7 @@ public class BulletEnemiScript : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            //Debug.Log("joueur dit aie");
+            Debug.Log("joueur dit aie");
             other.gameObject.GetComponent<HPPlayer>().hpPlayer--;
 
             if (other.gameObject.GetComponent<HPPlayer>().hpPlayer <= 0)
@@ -33,6 +32,25 @@ public class BulletEnemiScript : MonoBehaviour
         //Detruit la balle
 
         Destroy(gameObject);
+    }
+
+    private void OnParticleCollision(GameObject other)
+    {
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("joueur dit aie");
+            other.gameObject.GetComponent<HPPlayer>().hpPlayer--;
+
+            if (other.gameObject.GetComponent<HPPlayer>().hpPlayer <= 0)
+            {
+                other.gameObject.GetComponent<HPPlayer>().Dead();
+            }
+
+        }
+
+        //Detruit la balle
+
+        Destroy(rocket);
     }
 
     IEnumerator StartDecay()

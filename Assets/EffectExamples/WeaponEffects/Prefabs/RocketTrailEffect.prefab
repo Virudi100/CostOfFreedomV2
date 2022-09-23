@@ -11,11 +11,10 @@ GameObject:
   - component: {fileID: 4000012268613434}
   - component: {fileID: 198000010944348978}
   - component: {fileID: 199000011170560402}
-  - component: {fileID: 6731743469859512784}
   - component: {fileID: 8868005805499673172}
   m_Layer: 0
   m_Name: RocketWarhead
-  m_TagString: Untagged
+  m_TagString: bullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -3844,20 +3843,20 @@ ParticleSystem:
     maxCollisionShapes: 256
     quality: 0
     voxelSize: 0.5
-    collisionMessages: 0
+    collisionMessages: 1
     collidesWithDynamic: 1
     interiorCollisions: 1
   TriggerModule:
     enabled: 0
     serializedVersion: 2
-    inside: 1
+    inside: 0
     outside: 0
-    enter: 0
+    enter: 1
     exit: 0
     colliderQueryMode: 0
     radiusScale: 1
     primitives:
-    - {fileID: 0}
+    - {fileID: 8868005805499673172}
     - {fileID: 0}
     - {fileID: 0}
     - {fileID: 0}
@@ -4867,19 +4866,6 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
---- !u!65 &6731743469859512784
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1000010587324720}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 0.000020000005, y: 0.00002, z: 0.000020000005}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &8868005805499673172
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4892,7 +4878,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3167a1a5e77483b47b107eceb3575a2f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damageBulletPlayer: 3
+  damageBulletPlayer: 5
+  rocket: {fileID: 1000012600307132}
 --- !u!1 &1000012600307132
 GameObject:
   m_ObjectHideFlags: 0
@@ -8555,7 +8542,7 @@ ParticleSystem:
         m_NumAlphaKeys: 2
     range: {x: 0, y: 1}
   CollisionModule:
-    enabled: 1
+    enabled: 0
     serializedVersion: 4
     type: 1
     collisionMode: 0
@@ -8744,7 +8731,7 @@ ParticleSystem:
   TriggerModule:
     enabled: 0
     serializedVersion: 2
-    inside: 1
+    inside: 0
     outside: 0
     enter: 0
     exit: 0

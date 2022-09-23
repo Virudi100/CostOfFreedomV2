@@ -59,18 +59,6 @@ public class TurretState : MonoBehaviour
                 TransitionOrChangeState();
             }
             StateBehavior();
-
-            /*Vector3 targetForAnchor = new Vector3(player.transform.position.x, anchor.transform.position.y,
-                player.transform.position.z);
-            anchor.transform.LookAt(targetForAnchor);
-            Vector3 targetForFixation = new Vector3(player.transform.position.x, player.transform.position.y,
-                player.transform.position.z);
-            fixation.transform.LookAt(targetForFixation);
-
-            if (_canShoot == true)
-            {
-                StartCoroutine(Shoot());
-            }*/
         }
     }
 
