@@ -22,7 +22,7 @@ public class TutorialManager : ObjectifManager
 
     private void LevelLoader()
     {
-        _droneleft--;
+        _droneleft =-1;
         {
             if (_droneleft <= 0)
             {

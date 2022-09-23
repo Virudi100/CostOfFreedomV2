@@ -22,10 +22,8 @@ public class HPDrone : MonoBehaviour
             _FX = Instantiate(_FxExplosion[i],transform.position,transform.rotation);
             _FX.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             _FX.GetComponent<ParticleSystem>().Play();
-            OndroneDestroyed?.Invoke();
-           
         }
-
+        OndroneDestroyed?.Invoke();
         SignalLaunchRemoveObjectifManager();
         Destroy(droneEntier);
     }
