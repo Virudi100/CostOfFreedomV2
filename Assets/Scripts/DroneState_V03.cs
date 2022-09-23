@@ -13,7 +13,7 @@ public class DroneState_V03 : MonoBehaviour
     [Header("Shooting")]
     public Transform bulletSpawnPoint;
     public GameObject bulletPrefab;
-    public float bulletspeed = 1f;
+    public float bulletspeed = 2f;
     private bool _canShoot = true;
     [SerializeField] private Data data;
     public AudioSource drone_shot_sound;
@@ -35,7 +35,7 @@ public class DroneState_V03 : MonoBehaviour
         {
             _navMesh.SetDestination(player.transform.position);
             _navMesh.stoppingDistance = 8.0f;
-            Vector3 playerTargeted = new Vector3(player.transform.position.x, transform.position.y,
+            Vector3 playerTargeted = new Vector3(player.transform.position.x, transform.position.y - 0.4f,
                 player.transform.position.z);
             gameObject.transform.LookAt(playerTargeted);
             StartCoroutine(Shoot());
