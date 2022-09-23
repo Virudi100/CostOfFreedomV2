@@ -1,18 +1,45 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
+using UnityEngine.UIElements;
 
-public class TutorialManager : MonoBehaviour
+
+public class TutorialManager : ObjectifManager
 {
-    // Start is called before the first frame update
-    void Start()
+    private int _droneleft = 2;
+    
+    void OnEnable()
     {
-        
+        HPDrone.OndroneDestroyed += LevelLoader;
     }
 
-    // Update is called once per frame
-    void Update()
+    void OnDisable()
     {
-        
+        HPDrone.OndroneDestroyed -= LevelLoader;
     }
+
+    private void LevelLoader()
+    {
+        _droneleft--;
+        {
+            if (_droneleft <= 0)
+            {
+                
+                StartCoroutine(LoadingDelay());   
+               // Debug.Log("Changement de Scene !!!");
+                SceneManager.LoadScene("Level1");
+            }
+        }
+    }
+
+    private IEnumerator LoadingDelay()
+    {
+        yield return new WaitForSeconds(5f);
+    }
+
+
+
+
 }

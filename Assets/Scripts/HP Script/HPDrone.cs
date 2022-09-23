@@ -9,15 +9,21 @@ public class HPDrone : MonoBehaviour
     [SerializeField] private GameObject droneEntier;
     [SerializeField]private GameObject[] _FxExplosion;
     public static Action DeadDrone;
+
+    public delegate void droneKilled();
+    public static  event droneKilled OndroneDestroyed;
     
     public void Dead()
     {
         for (int i = 0; i < _FxExplosion.Length; i++)
         {
+            
             GameObject _FX = new GameObject();
             _FX = Instantiate(_FxExplosion[i],transform.position,transform.rotation);
             _FX.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             _FX.GetComponent<ParticleSystem>().Play();
+            OndroneDestroyed?.Invoke();
+           
         }
 
         SignalLaunchRemoveObjectifManager();
@@ -28,4 +34,6 @@ public class HPDrone : MonoBehaviour
     {
         DeadDrone?.Invoke();
     }
+
+    
 }
