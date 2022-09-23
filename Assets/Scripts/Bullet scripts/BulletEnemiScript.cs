@@ -6,6 +6,7 @@ public class BulletEnemiScript : MonoBehaviour
 {
     public float damageBulletPlayer = 20f;
     [SerializeField] private GameObject rocket;
+    [SerializeField] private GameObject bullet;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class BulletEnemiScript : MonoBehaviour
 
     private void OnParticleCollision(GameObject other)
     {
+        Debug.Log(other.name);
         if (other.CompareTag("Player"))
         {
             Debug.Log("joueur dit aie");
@@ -51,6 +53,7 @@ public class BulletEnemiScript : MonoBehaviour
         //Detruit la balle
 
         Destroy(rocket);
+        Destroy(bullet);
     }
 
     IEnumerator StartDecay()

@@ -801,8 +801,8 @@ GameObject:
   m_Component:
   - component: {fileID: 6800733539399320427}
   - component: {fileID: 4949846740304225942}
-  - component: {fileID: 4661325801761376330}
   - component: {fileID: 695663087202119193}
+  - component: {fileID: 2704792906459993638}
   m_Layer: 0
   m_Name: drone animation & collid
   m_TagString: drone
@@ -858,19 +858,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!135 &4661325801761376330
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7758021807455029858}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 2.0539844
-  m_Center: {x: 0, y: 0, z: -1.0346502}
 --- !u!114 &695663087202119193
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -887,6 +874,19 @@ MonoBehaviour:
   droneEntier: {fileID: 8667027758258893272}
   _FxExplosion:
   - {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
+--- !u!65 &2704792906459993638
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7758021807455029858}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 4.4213037, y: 1.7152299, z: 1.4719037}
+  m_Center: {x: -0.00000019868214, y: -0.05530109, z: -0.014747009}
 --- !u!1 &8324112275580340966
 GameObject:
   m_ObjectHideFlags: 0
@@ -1122,7 +1122,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 8667027758258893272}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 1.71
+  m_Radius: 2.7
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -1149,7 +1149,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 0}
   bulletSpawnPoint: {fileID: 5247597658471410305}
-  bulletPrefab: {fileID: 310495217223460401}
+  bulletPrefab: {fileID: 4657770876627147431, guid: bc953015ce952594ea54260c0a12aa93, type: 3}
   bulletspeed: 200
   data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
   drone_shot_sound: {fileID: 1495060958694303399}
@@ -1392,11 +1392,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: bc953015ce952594ea54260c0a12aa93, type: 3}
---- !u!1 &310495217223460401 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4657770876627147431, guid: bc953015ce952594ea54260c0a12aa93, type: 3}
-  m_PrefabInstance: {fileID: 4966520610483780758}
-  m_PrefabAsset: {fileID: 0}
 --- !u!4 &310495217223460400 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4657770876627147430, guid: bc953015ce952594ea54260c0a12aa93, type: 3}
@@ -1471,13 +1466,13 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7e9c50938e32351438a7df9ccad2f2a5, type: 3}
---- !u!4 &9135434658445052901 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 400006, guid: 7e9c50938e32351438a7df9ccad2f2a5, type: 3}
-  m_PrefabInstance: {fileID: 9135434658445447523}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &9135434658445481925 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100006, guid: 7e9c50938e32351438a7df9ccad2f2a5, type: 3}
+  m_PrefabInstance: {fileID: 9135434658445447523}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &9135434658445052901 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 400006, guid: 7e9c50938e32351438a7df9ccad2f2a5, type: 3}
   m_PrefabInstance: {fileID: 9135434658445447523}
   m_PrefabAsset: {fileID: 0}

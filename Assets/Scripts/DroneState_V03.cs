@@ -48,11 +48,10 @@ public class DroneState_V03 : MonoBehaviour
             _canShoot = false;
             drone_shot_sound.Play();
             FXFire.GetComponent<ParticleSystem>().Play();
-            bulletPrefab.GetComponent<ParticleSystem>().Play();
-            //GameObject NewBullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
+            //bulletPrefab.GetComponent<ParticleSystem>().Play();
+            GameObject NewBullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
             //NewBullet.GetComponent<Rigidbody>().AddForce(bulletSpawnPoint.forward * bulletspeed);
             yield return new WaitForSeconds(1f);
-            
             _canShoot = true;
         }
     }
