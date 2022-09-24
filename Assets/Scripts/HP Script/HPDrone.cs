@@ -26,7 +26,8 @@ public class HPDrone : MonoBehaviour
         }
         OndroneDestroyed?.Invoke();
         SignalLaunchRemoveObjectifManager();
-        soundDeadDrone.Play();
+        GameObject deadSound = Instantiate(soundDeadDrone.gameObject, transform.position, transform.rotation);
+        deadSound.GetComponent<AudioSource>().Play();
         Destroy(droneEntier);
     }
 

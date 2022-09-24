@@ -6,6 +6,7 @@ public class HPTurret : MonoBehaviour
 {
     [HideInInspector] public int hpTurret = 2;
     [SerializeField]private GameObject[] _FxExplosion;
+    [SerializeField] private AudioSource soundDeadTurret;
 
     public void Dead()
     {
@@ -18,6 +19,8 @@ public class HPTurret : MonoBehaviour
             _FX.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
             _FX.GetComponent<ParticleSystem>().Play();
         }
+        GameObject deadSound = Instantiate(soundDeadTurret.gameObject, transform.position, transform.rotation);
+        deadSound.GetComponent<AudioSource>().Play();
         Destroy(gameObject);
     }
 }

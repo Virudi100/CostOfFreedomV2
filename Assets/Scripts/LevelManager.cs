@@ -55,6 +55,9 @@ public class LevelManager : MonoBehaviour
     private bool inSecondZone = false;
     private bool inEndZone = false;
 
+    private bool startFadingZone1 = false;
+    private bool startFadingZone2 = false;
+
     public static event Action spawnDrone;
 
     private void Start()
@@ -113,8 +116,12 @@ public class LevelManager : MonoBehaviour
             }
             else if (data.droneDeadIndex >= 8)
             {
-                Destroy(ffGenerateurL);
-                Destroy(ffGenerateurR);
+                if(startFadingZone1 == false)
+                {
+                    startFadingZone1 = true;
+                    StartCoroutine(FadingOut());
+                }
+                
             }
             if (generateurL == null && generateurR == null)
             {
@@ -171,8 +178,13 @@ public class LevelManager : MonoBehaviour
             }
             else if (data.droneDeadIndex >= 16)
             {
-                Destroy(ffGenerateurL2);
-                Destroy(ffGenerateurR2);
+                if(startFadingZone2 == false)
+                {
+                    startFadingZone2 = true;
+                    StartCoroutine(FadingOut2());
+                }
+                
+
             }
             if (generateurL2 == null && generateurR2 == null)
             {
@@ -193,6 +205,24 @@ public class LevelManager : MonoBehaviour
                 }
             }
         }
+    }
+
+    private IEnumerator FadingOut()
+    {
+        ffGenerateurL.GetComponent<Animator>().SetBool("StartFade", true);
+        ffGenerateurR.GetComponent<Animator>().SetBool("StartFade", true);
+        yield return new WaitForSeconds(1.3f);
+        Destroy(ffGenerateurL);
+        Destroy(ffGenerateurR);
+    }
+
+    private IEnumerator FadingOut2()
+    {
+        ffGenerateurL2.GetComponent<Animator>().SetBool("StartFade", true);
+        ffGenerateurR2.GetComponent<Animator>().SetBool("StartFade", true);
+        yield return new WaitForSeconds(1.3f);
+        Destroy(ffGenerateurL2);
+        Destroy(ffGenerateurR2);
     }
 
     public void SignalSpawnDroneForObjectifManager()

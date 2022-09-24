@@ -23999,6 +23999,14 @@ PrefabInstance:
       propertyPath: m_Sprite
       value: 
       objectReference: {fileID: 21300000, guid: 124c1b453e7703d4fac0f3fb89b823c1, type: 3}
+    - target: {fileID: 2535845262006694258, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: Priority
+      value: 62
+      objectReference: {fileID: 0}
+    - target: {fileID: 2535845262006694258, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Volume
+      value: 0.443
+      objectReference: {fileID: 0}
     - target: {fileID: 2623809194226049523, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: m_Text
       value: 
@@ -24219,13 +24227,13 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 8300000, guid: a8b653094786a3e42b9fe02ea01698ba, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.1
+  m_Volume: 0.125
   m_Pitch: 1
   Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0
-  Priority: 124
+  Priority: 194
   DopplerLevel: 1
   MinDistance: 1
   MaxDistance: 500

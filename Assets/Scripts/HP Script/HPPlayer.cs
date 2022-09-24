@@ -23,6 +23,7 @@ public class HPPlayer : MonoBehaviour
     public GameObject GameOverSpriteEjection;
 
     [SerializeField] private Data data;
+    [SerializeField] private AudioSource criticalDamage;
 
     private void FixedUpdate()
     {
@@ -35,6 +36,7 @@ public class HPPlayer : MonoBehaviour
             {
                 case 50:
                     borkenGlassArray[0].SetActive(true);
+                    criticalDamage.Play();
                     break;
                 case 30:
                     borkenGlassArray[1].SetActive(true);
