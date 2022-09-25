@@ -176,6 +176,7 @@ GameObject:
   - component: {fileID: 3515237396400715050}
   - component: {fileID: 3515237396400715061}
   - component: {fileID: 3515237396400715060}
+  - component: {fileID: -1996755195979305322}
   m_Layer: 0
   m_Name: CanonPrefab
   m_TagString: turret
@@ -220,6 +221,7 @@ MonoBehaviour:
   bulletPrefab: {fileID: 1000012600307132, guid: 20c0f7e297297fc468f9740f6bb08cb1, type: 3}
   bulletspeed: 800
   bulletSound: {fileID: 3515237397528399753}
+  _animator: {fileID: -1996755195979305322}
   canonTurret: {fileID: 3515237397528399752}
   detectionIndex: 60
   data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
@@ -254,6 +256,25 @@ MonoBehaviour:
   - {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
   - {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
   soundDeadTurret: {fileID: 7544735811516099915}
+--- !u!95 &-1996755195979305322
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3515237396400715062}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 879b4075749bbcf4cbe6b44276bbf306, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &3515237397050311582
 GameObject:
   m_ObjectHideFlags: 0

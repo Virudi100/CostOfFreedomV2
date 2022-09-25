@@ -18,6 +18,7 @@ public class TurretState : MonoBehaviour
     public float bulletspeed = 1f;
     private bool _canShoot = true;
     public AudioSource bulletSound;
+    [SerializeField] Animator _animator;
 
     [Header("Detection")]
     [SerializeField] private Transform canonTurret;
@@ -168,6 +169,7 @@ public class TurretState : MonoBehaviour
     private IEnumerator Shoot()
     {
         GameObject NewBullet = Instantiate(bulletPrefab, bulletSpawnPoint.transform.position, bulletSpawnPoint.transform.rotation);
+        _animator.SetTrigger("Fire_Trigger");
         //NewBullet.GetComponent<Rigidbody>().AddForce(bulletSpawnPoint.forward * bulletspeed);
         yield return new WaitForSeconds(4f);
         bulletSound.Play();
