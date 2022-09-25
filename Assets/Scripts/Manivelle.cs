@@ -9,12 +9,14 @@ public class Manivelle : MonoBehaviour
     private bool isUsing = false;
     private GameObject interactorGO;
     private Vector3 standardpos;
+    private Quaternion standartRotation;
 
     private Vector3 prevInteractorPos;
 
     private void Awake()
     {
         standardpos = simple.gameObject.transform.localPosition;
+        standartRotation = simple.gameObject.transform.localRotation;
     }
 
     private void OnEnable()
@@ -43,6 +45,7 @@ public class Manivelle : MonoBehaviour
         
         interactorGO = null;
         simple.gameObject.transform.localPosition = standardpos;
+        simple.gameObject.transform.localRotation = standartRotation;
     }
 
     private void Update()
