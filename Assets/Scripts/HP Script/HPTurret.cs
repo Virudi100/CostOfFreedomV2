@@ -10,7 +10,8 @@ public class HPTurret : MonoBehaviour
 
     public void Dead()
     {
-        GameObject deadSound = Instantiate(soundDeadTurret.gameObject, transform.position, transform.rotation);
+        GameObject deadSound = Instantiate(soundDeadTurret.gameObject, transform.position, Quaternion.identity);
+        deadSound.transform.position = gameObject.transform.position;
         deadSound.GetComponent<AudioSource>().Play();
 
         for (int i = 0; i < _FxExplosion.Length; i++)
