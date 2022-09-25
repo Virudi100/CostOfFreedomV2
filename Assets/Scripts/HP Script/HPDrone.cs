@@ -16,6 +16,10 @@ public class HPDrone : MonoBehaviour
     
     public void Dead()
     {
+
+        GameObject deadSound = Instantiate(soundDeadDrone.gameObject, transform.position, transform.rotation);
+        deadSound.GetComponent<AudioSource>().Play();
+
         for (int i = 0; i < _FxExplosion.Length; i++)
         {
             
@@ -26,8 +30,7 @@ public class HPDrone : MonoBehaviour
         }
         OndroneDestroyed?.Invoke();
         SignalLaunchRemoveObjectifManager();
-        GameObject deadSound = Instantiate(soundDeadDrone.gameObject, transform.position, transform.rotation);
-        deadSound.GetComponent<AudioSource>().Play();
+        
         Destroy(droneEntier);
     }
 

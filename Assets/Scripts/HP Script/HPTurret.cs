@@ -10,6 +10,9 @@ public class HPTurret : MonoBehaviour
 
     public void Dead()
     {
+        GameObject deadSound = Instantiate(soundDeadTurret.gameObject, transform.position, transform.rotation);
+        deadSound.GetComponent<AudioSource>().Play();
+
         for (int i = 0; i < _FxExplosion.Length; i++)
         {
             Quaternion _rotate = Quaternion.Euler(0f, 90f, 0f);
@@ -19,8 +22,7 @@ public class HPTurret : MonoBehaviour
             _FX.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
             _FX.GetComponent<ParticleSystem>().Play();
         }
-        GameObject deadSound = Instantiate(soundDeadTurret.gameObject, transform.position, transform.rotation);
-        deadSound.GetComponent<AudioSource>().Play();
+        
         Destroy(gameObject);
     }
 }

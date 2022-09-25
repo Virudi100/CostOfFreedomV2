@@ -255,7 +255,7 @@ MonoBehaviour:
   _FxExplosion:
   - {fileID: 1000011797152326, guid: acf39d9f4addf294d93fa56fa373961b, type: 3}
   - {fileID: 1000012560919920, guid: 85a8865d1bf4a63478038fae23776de8, type: 3}
-  soundDeadTurret: {fileID: 7544735811516099915}
+  soundDeadTurret: {fileID: 7800035562914899074, guid: 2db1b682a8c1fee4989c24f691752a6f, type: 3}
 --- !u!95 &-1996755195979305322
 Animator:
   serializedVersion: 3
@@ -743,10 +743,5 @@ PrefabInstance:
 --- !u!4 &5792452625970114585 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7698646431453803135, guid: ac51a2d6d191a2a4c96d3d718eda7229, type: 3}
-  m_PrefabInstance: {fileID: 4230563242870293094}
-  m_PrefabAsset: {fileID: 0}
---- !u!82 &7544735811516099915 stripped
-AudioSource:
-  m_CorrespondingSourceObject: {fileID: 5909201986150870829, guid: ac51a2d6d191a2a4c96d3d718eda7229, type: 3}
   m_PrefabInstance: {fileID: 4230563242870293094}
   m_PrefabAsset: {fileID: 0}
