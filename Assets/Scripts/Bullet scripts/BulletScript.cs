@@ -7,11 +7,13 @@ public class BulletScript : MonoBehaviour
     Rigidbody _rb;
     public int damageBulletPlayer = 20;
     [SerializeField] Data data;
+    [SerializeField] private MedicPack _medicPack;
 
     private void Start()
     {
         StartCoroutine(StartDecay());
         _rb = GetComponent<Rigidbody>();
+        Physics.IgnoreCollision(_medicPack.GetComponent<Collider>(),GetComponent<Collider>());
     }
 
     private void OnTriggerEnter(Collider other)
