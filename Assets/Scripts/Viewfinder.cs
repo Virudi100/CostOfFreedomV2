@@ -31,12 +31,13 @@ public class Viewfinder : MonoBehaviour
         {
             return hit.point;
         }
-        else
+
+        return Vector3.zero;
+        /*else
         {
             hit.point = headPosition.transform.position + headPosition.transform.forward * 100;
             return hit.point;
-        }
-        return hit.point;
+        }*/
     }
     public Vector3 _CrosshairRayReturnPoint()
     {

@@ -10,11 +10,15 @@ public class GunBehaviour : Viewfinder
     bool _isPressed;
     private bool canShoot = true;
     [SerializeField] private Ejection _ejection;
+    public bool _OneCrosshair;
 
     private void Update() {
         if (_ejection.isEjected == false)
         {
-            _CrosshairPos();
+            if (_OneCrosshair)
+            {
+                _CrosshairPos();
+            }
             if (_isPressed == true && canShoot == true)
             {
                 StartCoroutine(_instantiateBulletPrefab());
