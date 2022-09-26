@@ -3,12 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="7f09db73-7c30-4503-a825-41b4b5bf152e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Level1.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Ejection.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Ejection.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/GunBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/GunBehaviour.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/XR/Settings/Open XR Package Settings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/XR/Settings/Open XR Package Settings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend1" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -77,7 +73,7 @@
       <workItem from="1663746529664" duration="1204000" />
       <workItem from="1663831416975" duration="14906000" />
       <workItem from="1663921393635" duration="1420000" />
-      <workItem from="1664178837801" duration="1989000" />
+      <workItem from="1664178837801" duration="2583000" />
     </task>
     <servers />
   </component>
