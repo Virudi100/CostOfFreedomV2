@@ -10,7 +10,8 @@ public class Ejection : MonoBehaviour
     private Rigidbody rb;
     [SerializeField] private HPPlayer player;
     [SerializeField] private XRSimpleInteractable simple;
-    bool isEjected = false;
+    public bool isEjected = false;
+    [SerializeField] private Data data;
     
 
     private void Start()
@@ -30,13 +31,15 @@ public class Ejection : MonoBehaviour
 
     private void StartUsingManivelle(SelectEnterEventArgs args)
     {
-        if(isEjected == false)
+        if (data.isplaying == true)
         {
-            isEjected = true;
-            
-            StartCoroutine(Eject());
+            if (isEjected == false)
+            {
+                isEjected = true;
+
+                StartCoroutine(Eject());
+            }
         }
-        
     }
 
     IEnumerator Eject()

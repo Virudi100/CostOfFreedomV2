@@ -3444,6 +3444,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   player: {fileID: 6102476305995732612}
   simple: {fileID: 8223212896219975220}
+  isEjected: 0
+  data: {fileID: 0}
 --- !u!1 &6158017083050137755
 GameObject:
   m_ObjectHideFlags: 0
@@ -5327,6 +5329,7 @@ MonoBehaviour:
   data: {fileID: 0}
   SpawnBullet: {fileID: 3861660464508606032}
   Bullet: {fileID: 4429424579181086018, guid: d411c3266dc196f4e911bb54c025c74b, type: 3}
+  _ejection: {fileID: 3542792963009780526}
 --- !u!114 &1695934840970428500
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5346,3 +5349,4 @@ MonoBehaviour:
   data: {fileID: 0}
   SpawnBullet: {fileID: 3861660465048679417}
   Bullet: {fileID: 4429424579181086018, guid: d411c3266dc196f4e911bb54c025c74b, type: 3}
+  _ejection: {fileID: 3542792963009780526}
