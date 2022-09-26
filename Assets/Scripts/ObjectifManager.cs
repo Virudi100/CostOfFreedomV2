@@ -9,6 +9,8 @@ public class ObjectifManager : MonoBehaviour
 {
     private int _numberDrone=0;
     public Text _ObjectifText;
+    [SerializeField] private AudioSource aSourceObjectif;
+
     private void OnEnable()
     {
         LevelManager.spawnDrone += addDrone;
@@ -31,6 +33,10 @@ public class ObjectifManager : MonoBehaviour
     {
         _numberDrone--;
         UpdatText();
+        if(_numberDrone == 0)
+        {
+            aSourceObjectif.Play();
+        }
     }
 
     void UpdatText()

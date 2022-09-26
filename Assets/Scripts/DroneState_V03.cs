@@ -46,6 +46,7 @@ public class DroneState_V03 : MonoBehaviour
         if (_canShoot == true)
         {
             _canShoot = false;
+            drone_shot_sound.pitch = Random.Range(1f, 3f);
             drone_shot_sound.Play();
             FXFire.GetComponent<ParticleSystem>().Play();
             //bulletPrefab.GetComponent<ParticleSystem>().Play();
