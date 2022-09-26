@@ -127,3 +127,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   damageBulletPlayer: 20
   data: {fileID: 11400000, guid: 6533bc21ef755f8469d597691597d0f9, type: 2}
+  _medicPack: {fileID: 1625320449291528615, guid: acc0fdf52f17a6140bd3484d66046ae9, type: 3}
