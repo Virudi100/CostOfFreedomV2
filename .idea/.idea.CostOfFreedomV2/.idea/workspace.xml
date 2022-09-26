@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7f09db73-7c30-4503-a825-41b4b5bf152e" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/FX/FX_bullet_Drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/FX/FX_bullet_Drone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Prefabs/drone/drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/drone/drone.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet scripts/BulletEnemiScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet scripts/BulletEnemiScript.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/DroneState_V03.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/DroneState_V03.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPDrone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPDrone.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPTurret.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPTurret.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -75,6 +75,7 @@
       <workItem from="1663746529664" duration="1204000" />
       <workItem from="1663831416975" duration="14906000" />
       <workItem from="1663921393635" duration="1420000" />
+      <workItem from="1664178837801" duration="1174000" />
     </task>
     <servers />
   </component>

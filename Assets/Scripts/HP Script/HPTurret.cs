@@ -17,8 +17,7 @@ public class HPTurret : MonoBehaviour
         for (int i = 0; i < _FxExplosion.Length; i++)
         {
             Quaternion _rotate = Quaternion.Euler(0f, 90f, 0f);
-            GameObject _FX = new GameObject();
-            _FX = Instantiate(_FxExplosion[0],transform.position+new Vector3(0,2.5f,0),transform.rotation);
+            GameObject _FX = Instantiate(_FxExplosion[0],transform.position+new Vector3(0,2.5f,0),transform.rotation);
             _FX = Instantiate(_FxExplosion[1],transform.position+new Vector3(0,2.5f,0),transform.rotation*_rotate);
             _FX.transform.localScale = new Vector3(1.1f, 1.1f, 1.1f);
             _FX.GetComponent<ParticleSystem>().Play();
