@@ -210,7 +210,9 @@ public class LevelManager : MonoBehaviour
     private IEnumerator FadingOut()
     {
         ffGenerateurL.GetComponent<Animator>().SetBool("StartFade", true);
+        ffGenerateurL.GetComponent<AudioSource>().Play();
         ffGenerateurR.GetComponent<Animator>().SetBool("StartFade", true);
+        ffGenerateurR.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1.3f);
         Destroy(ffGenerateurL);
         Destroy(ffGenerateurR);
@@ -219,7 +221,9 @@ public class LevelManager : MonoBehaviour
     private IEnumerator FadingOut2()
     {
         ffGenerateurL2.GetComponent<Animator>().SetBool("StartFade", true);
+        ffGenerateurL2.GetComponent<AudioSource>().Play();
         ffGenerateurR2.GetComponent<Animator>().SetBool("StartFade", true);
+        ffGenerateurR2.GetComponent<AudioSource>().Play();
         yield return new WaitForSeconds(1.3f);
         Destroy(ffGenerateurL2);
         Destroy(ffGenerateurR2);
