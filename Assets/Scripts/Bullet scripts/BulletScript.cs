@@ -17,14 +17,14 @@ public class BulletScript : MonoBehaviour
     private void OnTriggerEnter(Collider other)
     {
         if(other){
-            Debug.Log(other.gameObject.name);
+            //Debug.Log(other.gameObject.name);
         }
 
         //Impact Drone
 
         if (other.CompareTag("drone"))
         {
-            Debug.Log("je touche le drone");
+            //Debug.Log("je touche le drone");
             other.gameObject.GetComponent<HPDrone>().hpDrone--;
             
             if (other.gameObject.GetComponent<HPDrone>().hpDrone <= 0)
@@ -37,7 +37,7 @@ public class BulletScript : MonoBehaviour
         //Impact Tourelle
         if (other.CompareTag("turret"))
         {
-            Debug.Log("je touche une tourelle");
+            //Debug.Log("je touche une tourelle");
             other.gameObject.GetComponent<HPTurret>().hpTurret--;
 
             if(other.gameObject.GetComponent<HPTurret>().hpTurret <= 0)
@@ -55,7 +55,7 @@ public class BulletScript : MonoBehaviour
 
         if (other.CompareTag("generateur"))
         {
-            Debug.Log("je touche un generateur");
+            //Debug.Log("je touche un generateur");
 
             other.gameObject.GetComponent<GenerateurHP>().hpGenerateur--;
 

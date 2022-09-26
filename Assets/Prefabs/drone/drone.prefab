@@ -875,6 +875,7 @@ MonoBehaviour:
   _FxExplosion:
   - {fileID: 1000013462590818, guid: ecdd96beb7f93494880c052dfccf9dc1, type: 3}
   soundDeadDrone: {fileID: 5909201986150870829, guid: ac51a2d6d191a2a4c96d3d718eda7229, type: 3}
+  _PackMedic: {fileID: 1843317233059916, guid: acc0fdf52f17a6140bd3484d66046ae9, type: 3}
 --- !u!65 &2704792906459993638
 BoxCollider:
   m_ObjectHideFlags: 0

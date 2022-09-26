@@ -19,7 +19,7 @@ public class BulletEnemiScript : MonoBehaviour
 
         if (other.CompareTag("Player"))
         {
-            Debug.Log("joueur dit aie");
+            //Debug.Log("joueur dit aie");
             other.gameObject.GetComponent<HPPlayer>().hpPlayer--;
 
             if (other.gameObject.GetComponent<HPPlayer>().hpPlayer <= 0)
@@ -40,7 +40,7 @@ public class BulletEnemiScript : MonoBehaviour
         Debug.Log(other.name);
         if (other.CompareTag("Player"))
         {
-            Debug.Log("joueur dit aie");
+            //Debug.Log("joueur dit aie");
             other.gameObject.GetComponent<HPPlayer>().hpPlayer--;
 
             if (other.gameObject.GetComponent<HPPlayer>().hpPlayer <= 0)

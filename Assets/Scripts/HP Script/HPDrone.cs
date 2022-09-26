@@ -10,13 +10,13 @@ public class HPDrone : MonoBehaviour
     [SerializeField]private GameObject[] _FxExplosion;
     public static Action DeadDrone;
     [SerializeField] private AudioSource soundDeadDrone;
+    [SerializeField] private GameObject _PackMedic;
 
     public delegate void droneKilled();
     public static  event droneKilled OndroneDestroyed;
     
     public void Dead()
     {
-
         GameObject deadSound = Instantiate(soundDeadDrone.gameObject, transform.position, Quaternion.identity);
         deadSound.transform.position = gameObject.transform.position;
         deadSound.GetComponent<AudioSource>().Play();
@@ -29,13 +29,24 @@ public class HPDrone : MonoBehaviour
         }
         OndroneDestroyed?.Invoke();
         SignalLaunchRemoveObjectifManager();
-        
+        InstantiateMedicPack();
         Destroy(droneEntier);
     }
 
     public void SignalLaunchRemoveObjectifManager()
     {
         DeadDrone?.Invoke();
+    }
+
+    public void InstantiateMedicPack()
+    {
+        int Random;
+        Random = UnityEngine.Random.Range(0, 3);
+        Debug.Log(Random);
+        if (Random == 2)
+        {
+            GameObject Medic = Instantiate(_PackMedic, transform.position, transform.rotation);
+        }
     }
 
     

@@ -3,8 +3,12 @@
   <component name="ChangeListManager">
     <list default="true" id="7f09db73-7c30-4503-a825-41b4b5bf152e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend1" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Models/Turret/Blend/CanonBlend.blend1" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonParticles/Prefabs/FX_Pickup_Health_01.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PolygonParticles/Prefabs/FX_Pickup_Health_01.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/drone/drone.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/drone/drone.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet scripts/BulletEnemiScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet scripts/BulletEnemiScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Bullet scripts/BulletScript.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Bullet scripts/BulletScript.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPDrone.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HP Script/HPDrone.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +29,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ejection.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyFXDelay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MedicPack.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectifManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2F21ZivMzwGhySCPQpgVXAzdfTk" />
@@ -73,7 +78,7 @@
       <workItem from="1663746529664" duration="1204000" />
       <workItem from="1663831416975" duration="14906000" />
       <workItem from="1663921393635" duration="1420000" />
-      <workItem from="1664178837801" duration="2583000" />
+      <workItem from="1664178837801" duration="6329000" />
     </task>
     <servers />
   </component>
