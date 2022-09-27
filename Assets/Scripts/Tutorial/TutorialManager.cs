@@ -22,7 +22,7 @@ public class TutorialManager : ObjectifManager
 
     private void LevelLoader()
     {
-        _droneleft =-1;
+        _droneleft --;
         {
             if (_droneleft <= 0)
             {
@@ -36,7 +36,7 @@ public class TutorialManager : ObjectifManager
 
     private IEnumerator LoadingDelay()
     {
-        yield return new WaitForSeconds(5f);
+        yield return new WaitForSeconds(15f);
     }
 
 
