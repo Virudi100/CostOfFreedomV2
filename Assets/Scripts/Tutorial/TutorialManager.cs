@@ -24,7 +24,7 @@ public class TutorialManager : ObjectifManager
     {
         _droneleft --;
         {
-            if (_droneleft <= 0)
+            if (_droneleft == 0)
             {
                 
                 StartCoroutine(LoadingDelay());   
