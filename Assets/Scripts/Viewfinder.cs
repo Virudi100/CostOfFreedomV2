@@ -36,6 +36,7 @@ public class Viewfinder : MonoBehaviour
             hit.point = headPosition.transform.position + headPosition.transform.forward * 100;
             return hit.point;
         }
+  
     }
     public Vector3 _CrosshairRayReturnPoint()
     {

@@ -14629,6 +14629,10 @@ PrefabInstance:
       propertyPath: m_FontData.m_Alignment
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2149493126496460974, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
+      propertyPath: m_Layer
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 2535845262006694258, guid: 55bf72cd6351bfd4784442dd5e3b3eea, type: 3}
       propertyPath: Priority
       value: 62

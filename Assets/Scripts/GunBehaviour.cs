@@ -15,10 +15,11 @@ public class GunBehaviour : Viewfinder
     private void Update() {
         if (_ejection.isEjected == false)
         {
-            if (_OneCrosshair)
+            _CrosshairPos();
+            /*if (_OneCrosshair)
             {
                 _CrosshairPos();
-            }
+            }*/
             if (_isPressed == true && canShoot == true)
             {
                 StartCoroutine(_instantiateBulletPrefab());
