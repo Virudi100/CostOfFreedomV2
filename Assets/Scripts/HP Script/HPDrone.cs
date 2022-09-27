@@ -27,7 +27,7 @@ public class HPDrone : MonoBehaviour
             _FX.transform.localScale = new Vector3(0.5f, 0.5f, 0.5f);
             _FX.GetComponent<ParticleSystem>().Play();
         }
-        OndroneDestroyed?.Invoke();
+       
         SignalLaunchRemoveObjectifManager();
         InstantiateMedicPack();
         Destroy(droneEntier);
@@ -35,6 +35,7 @@ public class HPDrone : MonoBehaviour
 
     public void SignalLaunchRemoveObjectifManager()
     {
+        OndroneDestroyed?.Invoke();
         DeadDrone?.Invoke();
     }
 
