@@ -3,7 +3,47 @@ guid: ba4b10d2b87177848bcd18bb31d8fbe8
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Doors
+    second: {fileID: 2100000, guid: 5d455a94917bc3a4d8f595b361914974, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: metal rouille
+    second: {fileID: 2100000, guid: cafda939adea10a439c1f3dab9a81cc8, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tivlehlew_4K_Albedo
+    second: {fileID: 2800000, guid: 786519af22f109f4880a5f17ae12a2f6, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tivlehlew_4K_Normal
+    second: {fileID: 2800000, guid: f5d9965d77b082e469afaa775705310f, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tivlehlew_4K_Roughness
+    second: {fileID: 2800000, guid: d21bb27b7872f694cbaa325a8cdb59ae, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tj2xahsbw_4K_Albedo
+    second: {fileID: 2800000, guid: f35daad28c18df941965a43e1112e272, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tj2xahsbw_4K_Normal
+    second: {fileID: 2800000, guid: 4086849eb2fb73d48a94da0c497cc736, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: tj2xahsbw_4K_Roughness
+    second: {fileID: 2800000, guid: 1504238cc7a23b341b9d08b0ca5abe4e, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0

@@ -3,7 +3,47 @@ guid: b66a577cbdb04c249bf16d4177a02a92
 ModelImporter:
   serializedVersion: 20200
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.004
+    second: {fileID: 2100000, guid: 52686c0c1d7207941b2ee3a52e34ac31, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Material.008
+    second: {fileID: 2100000, guid: bd919db1326397e4c8b9a6136f17dbd5, type: 2}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ucujddrn_2K_Albedo
+    second: {fileID: 2800000, guid: dd256cba1c178184b9cd6d606a148f5a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ucujddrn_2K_Normal
+    second: {fileID: 2800000, guid: 0b21caefdedaed64ea754b16014403ab, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: ucujddrn_2K_Roughness
+    second: {fileID: 2800000, guid: 88003a41028a242429ae7b61a72a544e, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vmghfhro_2K_Albedo
+    second: {fileID: 2800000, guid: 1fef9fd0a3a3a0040b355346013d571a, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vmghfhro_2K_Normal
+    second: {fileID: 2800000, guid: 698d4d10d1f52f04caa4cdd8b2a42e64, type: 3}
+  - first:
+      type: UnityEngine:Texture2D
+      assembly: UnityEngine.CoreModule
+      name: vmghfhro_2K_Roughness
+    second: {fileID: 2800000, guid: c8f5940ac9a05fe4a8edcb6c40c85196, type: 3}
   materials:
     materialImportMode: 2
     materialName: 0
