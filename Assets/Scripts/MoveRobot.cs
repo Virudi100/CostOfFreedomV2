@@ -7,12 +7,15 @@ public class MoveRobot : MonoBehaviour
 
     [SerializeField] private GameObject cockpit;
     [SerializeField] private float speed = 3;
+    public AudioSource engineSound;
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("ZDFront"))
         {
             cockpit.transform.Translate(Vector3.forward * speed * Time.deltaTime);
             //print("move forward");
+            engineSound.Play();
+            
         }
 
         if (other.gameObject.CompareTag("ZDBack"))
