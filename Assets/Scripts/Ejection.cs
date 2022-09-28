@@ -17,6 +17,7 @@ public class Ejection : MonoBehaviour
     private void Start()
     {
         rb = gameObject.GetComponent<Rigidbody>();
+        StartCoroutine(Starting());
     }
 
     private void OnEnable()
@@ -40,6 +41,13 @@ public class Ejection : MonoBehaviour
                 StartCoroutine(Eject());
             }
         }
+    }
+
+    IEnumerator Starting()
+    {
+        gameObject.GetComponent<BoxCollider>().enabled = false;
+        yield return new WaitForSeconds(3);
+        gameObject.GetComponent<BoxCollider>().enabled = true;
     }
 
     IEnumerator Eject()
