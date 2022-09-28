@@ -8,8 +8,15 @@ using UnityEngine.UIElements;
 
 public class TutorialManager : ObjectifManager
 {
+
+    public Data lenomquetuveux;
     private int _droneleft = 2;
-    
+
+    public void Start()
+    {
+        lenomquetuveux.isplaying = true;
+    }
+
     void OnEnable()
     {
         HPDrone.OndroneDestroyed += LevelLoader;

@@ -40,7 +40,6 @@ public class GunBehaviour : Viewfinder
     IEnumerator _instantiateBulletPrefab()
     {
         canShoot = false;
-
         SpawnBullet.LookAt(RayPos());        
         GameObject _newBullet = Instantiate(Bullet,SpawnBullet.transform.position,Quaternion.identity);
         _newBullet.GetComponent<Rigidbody>().AddForce(SpawnBullet.forward*_powerImpulseBullet);
