@@ -10,28 +10,20 @@ public class MoveRobot : MonoBehaviour
     [SerializeField] private float speed = 3;
     public AudioSource engineSound;
     private bool accelerationcheck;
+    private bool signalToTimer= false;
     private float _accelerationTimer = 0;
-
-    public delegate void OnRobotGoingVroum();
-
-    public static event OnRobotGoingVroum Robotgoingvroum;
+    
 
     private void Start()
     {
         accelerationcheck = false;
     }
-
-    private void FixedUpdate()
-    {
-       // PlayEngine();
-    }
-
     private void OnTriggerStay(Collider other)
     {
         if (other.gameObject.CompareTag("ZDFront"))
         {
             cockpit.transform.Translate(Vector3.forward * speed * Time.deltaTime);
-            //accelerationcheck = true;
+            accelerationcheck = false;
         }
 
         if (other.gameObject.CompareTag("ZDBack"))
@@ -40,23 +32,23 @@ public class MoveRobot : MonoBehaviour
         }
     }
 
-
-
-/*private void PlayEngine()
-{
-    if ( _accelerationTimer == 0f && accelerationcheck == true)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("lala");
-        engineSound.Play();
-        _accelerationTimer += Time.fixedDeltaTime;
-        if (_accelerationTimer >= 10f)
+        if (other.gameObject.CompareTag("ZDFront"))
         {
-            Debug.Log("loulou");
-            _accelerationTimer = 0f;
-            accelerationcheck = false;
+            Robotgoingvroum();
+        }
+    }
+
+    private void Robotgoingvroum()
+    {
+        if (accelerationcheck == false)
+        {
+            engineSound.Play();
+            accelerationcheck = true;
         }
     }
     
-}
-*/
+
+
 }
