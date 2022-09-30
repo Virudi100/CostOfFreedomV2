@@ -36,7 +36,7 @@ public class TutorialManager : ObjectifManager
                 
                 StartCoroutine(LoadingDelay());   
                // Debug.Log("Changement de Scene !!!");
-                SceneManager.LoadScene("Level1");
+                SceneManager.LoadScene(0);
             }
         }
     }
