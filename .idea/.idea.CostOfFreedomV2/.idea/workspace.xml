@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7f09db73-7c30-4503-a825-41b4b5bf152e" name="Changes" comment="" />
+    <list default="true" id="7f09db73-7c30-4503-a825-41b4b5bf152e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.CostOfFreedomV2/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Prefabs/Player/crosshair.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Prefabs/Player/crosshair.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/EndDemo.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/EndDemo.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -20,8 +26,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Ejection.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectifManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/DestroyFXDelay.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/ObjectifManager.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="ProjectId" id="2F21ZivMzwGhySCPQpgVXAzdfTk" />
   <component name="ProjectViewState">
@@ -74,6 +80,7 @@
       <workItem from="1664280482939" duration="3456000" />
       <workItem from="1664350061876" duration="12653000" />
       <workItem from="1664442128581" duration="5496000" />
+      <workItem from="1664887294191" duration="1293000" />
     </task>
     <servers />
   </component>

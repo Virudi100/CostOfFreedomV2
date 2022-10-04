@@ -16,6 +16,7 @@ TagManager:
   - turret
   - generateur
   - Crosshair
+  - Life bar
   layers:
   - Default
   - TransparentFX
