@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 19affe6b3882cd24da418dbe9ac959ce, type: 3}
   m_Name: Data
   m_EditorClassIdentifier: 
-  droneDeadIndex: 1
+  droneDeadIndex: 0
   isplaying: 1
